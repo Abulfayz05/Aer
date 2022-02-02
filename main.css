@@ -45,8 +45,8 @@
   .hero .slider {
     margin: 0px;
     padding: 20px;
-    -ms-grid-columns: 350px 300px 250px 250px;
-        grid-template-columns: 350px 300px 250px 250px;
+    -ms-grid-columns: 300px 300px 250px 250px;
+        grid-template-columns: 300px 300px 250px 250px;
   }
   .hero .slider .first {
     display: none;

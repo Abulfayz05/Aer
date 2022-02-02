@@ -33,7 +33,7 @@
     @include breakpoint-down(xsmall) {
       margin: 0px;
       padding: 20px;
-      grid-template-columns: 350px 300px 250px 250px;
+      grid-template-columns: 300px 300px 250px 250px;
 
       .first {
         display: none;

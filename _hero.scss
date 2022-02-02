@@ -195,6 +195,9 @@
       max-width: 300px;
       line-height: 71px;
       font-family: "Arimo", sans-serif;
+      @include breakpoint-down(xsmall) {
+        margin-top: -50px;
+      }
     }
 
     p {

@@ -237,6 +237,12 @@
   font-family: "Arimo", sans-serif;
 }
 
+@media (max-width: 576px) {
+  .hero__text h1 {
+    margin-top: -50px;
+  }
+}
+
 .hero__text p {
   margin-top: 20px;
   font-size: 18px;

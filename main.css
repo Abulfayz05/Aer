@@ -44,7 +44,7 @@
 @media (max-width: 576px) {
   .hero .slider {
     margin: 0px;
-    padding: 20px;
+    padding: 10px;
     -ms-grid-columns: 300px 300px 250px 250px;
         grid-template-columns: 300px 300px 250px 250px;
   }

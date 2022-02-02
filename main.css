@@ -1,0 +1,447 @@
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  background-image: url(./img/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 576px) {
+  .hero {
+    background-size: cover;
+  }
+}
+
+.hero .slider {
+  width: 100%;
+  margin-left: 104px;
+  background: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  bottom: 0;
+  position: fixed;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 75px 280px 300px 250px 250px;
+      grid-template-columns: 75px 280px 300px 250px 250px;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-gap: 1rem;
+}
+
+@media (max-width: 576px) {
+  .hero .slider {
+    margin: 0px;
+    padding: 20px;
+    -ms-grid-columns: 350px 300px 250px 250px;
+        grid-template-columns: 350px 300px 250px 250px;
+  }
+  .hero .slider .first {
+    display: none;
+  }
+}
+
+.hero .slider img {
+  height: 170px;
+}
+
+.hero .slider h3 {
+  padding-bottom: 10px;
+  margin-top: 18px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+.hero .slider h5 {
+  padding-top: 10px;
+  font-size: 13px;
+  color: #646464;
+}
+
+.hero .slider .white {
+  color: #d3d0d0;
+}
+
+.hero .slider .yellow {
+  color: #efc862;
+  font-size: 15;
+}
+
+.hero .slider .lh {
+  line-height: 25px;
+}
+
+.hero .colm {
+  width: 100px;
+  position: fixed;
+  bottom: 0;
+  left: 0px;
+  height: 100%;
+  right: auto;
+  border: 2px solid #707070;
+  color: #a8b2d1;
+}
+
+@media (max-width: 576px) {
+  .hero .colm {
+    display: none;
+  }
+}
+
+.hero .vertical {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 310px;
+}
+
+.hero .ham {
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #707070;
+}
+
+.hero .ham span {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.hero .ham span:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.hero .ham .m2 {
+  width: 15px;
+  -webkit-transform: translate(5px);
+          transform: translate(5px);
+}
+
+.hero .ham .m3 {
+  width: 7px;
+  -webkit-transform: translate(9px);
+          transform: translate(9px);
+}
+
+.hero .vertext {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin-top: 50px;
+  font-size: 13px;
+}
+
+.hero .gridhome {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 92% 70%;
+      grid-template-columns: 20% 92% 70%;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-gap: 1rem;
+}
+
+@media (max-width: 576px) {
+  .hero .gridhome {
+    -ms-grid-columns: 300px;
+        grid-template-columns: 300px;
+    margin: 0 auto;
+  }
+  .hero .gridhome .second {
+    display: none;
+  }
+  .hero .gridhome p {
+    margin-top: 2px;
+    font-size: 13px;
+  }
+}
+
+.hero .gridhome .second {
+  padding-left: 40px;
+}
+
+.hero .gridhome .second h2 {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.hero .gridhome .second .percent {
+  position: relative;
+  width: 50%;
+  height: 2px;
+  background: #707070;
+  display: block;
+  margin-top: 5px;
+}
+
+.hero .gridhome .second .percent div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #efc862;
+}
+
+.hero .gridhome .second h3 {
+  padding-top: 10px;
+  font-size: 17px;
+  color: #fff;
+}
+
+.hero .gridhome .second h5 {
+  padding-top: 10px;
+  font-size: 13px;
+  color: #646464;
+}
+
+.hero__text h1 {
+  background-color: transparent;
+  font-size: 71px;
+  color: #ffffff;
+  max-width: 300px;
+  line-height: 71px;
+  font-family: "Arimo", sans-serif;
+}
+
+.hero__text p {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #c5c9d3;
+  max-width: 500px;
+}
+
+@media (max-width: 576px) {
+  .hero__text h3 {
+    font-size: 16px;
+    padding: 5px;
+  }
+  .hero__text h1,
+  .hero__text h2 {
+    font-size: 35px;
+  }
+}
+
+.hero .dot {
+  height: 8px;
+  width: 8px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.hero .dots {
+  margin-top: 15px;
+}
+
+.hero .dotses {
+  margin-top: 15px;
+}
+
+@media (min-width: 576px) {
+  .hero .dotses {
+    display: none;
+  }
+}
+
+.hero .active {
+  background-color: #efc862;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #161616;
+  font-family: "Apercu Pro";
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.header.open .header__toggle > span:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.header.open .header__toggle > span:nth-child(2) {
+  opacity: 0;
+}
+
+.header.open .header__toggle > span:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.header nav {
+  padding: 15px 20px;
+  margin-right: 20px;
+}
+
+.header__logo h1 {
+  color: white;
+  font-size: 35px;
+  font-weight: 400;
+  margin-left: 175px;
+}
+
+@media (max-width: 1023px) {
+  .header__logo h1 {
+    margin-left: 10px;
+  }
+}
+
+.header__toggle > span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background-color: #707070;
+  -webkit-transform-origin: 3px 1px;
+          transform-origin: 3px 1px;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.header__toggle > span:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.header__menu {
+  position: absolute;
+  width: calc(100% - 3rem);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: white;
+  margin-top: 1.5rem;
+  padding: 1.625rem;
+  border-radius: 5px;
+}
+
+.header__menu a {
+  display: block;
+  color: #fff;
+  padding: 0.62rem;
+  text-align: center;
+}
+
+.header__links .link {
+  font-family: "Apercu Pro";
+  font-size: 18px;
+  position: relative;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+}
+
+.header__links .link:not(:last-child) {
+  margin: 32px 20px;
+}
+
+.header__links .link.active:after {
+  background: #efc862;
+}
+
+.header__links .link::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  display: block;
+  top: 100%;
+  left: 0;
+  margin-top: 7px;
+  -webkit-transition: opacity 0.1s linear;
+  transition: opacity 0.1s linear;
+}
+
+.header__links .link:hover::after {
+  background: #efc862;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-fd-cl {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 1023px) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */

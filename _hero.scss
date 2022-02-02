@@ -1,0 +1,241 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+  min-height: 100vh;
+  background-image: url(./img/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include breakpoint-down(xsmall) {
+    background-size: cover;
+  }
+
+  .slider {
+    width: 100%;
+    margin-left: 104px;
+    background: rgba(
+      0,
+      0,
+      0,
+      0.4
+    ); // Make sure this color has an opacity of less than 1
+    backdrop-filter: blur(6px);
+    bottom: 0;
+    position: fixed;
+    display: grid;
+    grid-template-columns: 75px 280px 300px 250px 250px;
+    grid-template-rows: 1fr;
+    grid-gap: 1rem;
+
+    @include breakpoint-down(xsmall) {
+      margin: 0px;
+      padding: 20px;
+      grid-template-columns: 350px 300px 250px 250px;
+
+      .first {
+        display: none;
+      }
+    }
+
+    img {
+      height: 170px;
+    }
+
+    h3 {
+      padding-bottom: 10px;
+      margin-top: 18px;
+      font-size: 16px;
+      color: #fff;
+      font-weight: 400;
+      letter-spacing: 3px;
+    }
+
+    h5 {
+      padding-top: 10px;
+      font-size: 13px;
+      color: #646464;
+    }
+    .white {
+      color: rgb(211, 208, 208);
+    }
+
+    .yellow {
+      color: #efc862;
+      font-size: 15;
+    }
+
+    .lh {
+      line-height: 25px;
+    }
+  }
+  .colm {
+    width: 100px;
+    position: fixed;
+    bottom: 0;
+
+    left: 0px;
+    height: 100%;
+    right: auto;
+    border: 2px solid #707070;
+
+    color: #a8b2d1;
+    @include breakpoint-down(xsmall) {
+      display: none;
+    }
+  }
+
+  .vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 310px;
+  }
+
+  .ham {
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #707070;
+    span {
+      display: block;
+      width: 25px;
+      height: 2px;
+      background-color: #fff;
+
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+    .m2 {
+      width: 15px;
+      transform: translate(5px);
+    }
+
+    .m3 {
+      width: 7px;
+      transform: translate(9px);
+    }
+  }
+
+  .vertext {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    margin-top: 50px;
+    font-size: 13px;
+  }
+
+  .gridhome {
+    display: grid;
+    grid-template-columns: 20% 92% 70%;
+    grid-template-rows: 1fr;
+    grid-gap: 1rem;
+
+    @include breakpoint-down(xsmall) {
+      grid-template-columns: 300px;
+      margin: 0 auto;
+      .second {
+        display: none;
+      }
+
+      p {
+        margin-top: 2px;
+        font-size: 13px;
+      }
+    }
+    .second {
+      padding-left: 40px;
+      h2 {
+        font-size: 22px;
+        color: #fff;
+        font-weight: 400;
+      }
+      .percent {
+        position: relative;
+        width: 50%;
+        height: 2px;
+        background: #707070;
+        display: block;
+        margin-top: 5px;
+
+        // color: #EFC862;
+
+        div {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          background: #efc862;
+        }
+      }
+
+      h3 {
+        padding-top: 10px;
+        font-size: 17px;
+        color: #fff;
+      }
+
+      h5 {
+        padding-top: 10px;
+        font-size: 13px;
+        color: #646464;
+      }
+    }
+  }
+
+  &__text {
+    h1 {
+      background-color: transparent;
+      font-size: 71px;
+      color: #ffffff;
+      max-width: 300px;
+      line-height: 71px;
+      font-family: "Arimo", sans-serif;
+    }
+
+    p {
+      margin-top: 20px;
+      font-size: 20px;
+      color: #c5c9d3;
+      max-width: 500px;
+    }
+
+    @include breakpoint-down(xsmall) {
+      h3 {
+        font-size: 16px;
+        padding: 5px;
+      }
+      h1,
+      h2 {
+        font-size: 35px;
+      }
+    }
+  }
+
+  .dot {
+    height: 8px;
+    width: 8px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+  }
+  .dots {
+    margin-top: 15px;
+  }
+
+  .dotses {
+    margin-top: 15px;
+    @include breakpoint-up(xsmall) {
+      display: none;
+    }
+  }
+
+  .active {
+    background-color: #efc862;
+  }
+}

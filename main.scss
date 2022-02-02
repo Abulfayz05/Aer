@@ -1,0 +1,154 @@
+@import "mixins";
+@import "hero";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #161616;
+  font-family: "Apercu Pro";
+}
+
+.header {
+  position: fixed;
+
+  width: 100%;
+  z-index: 1;
+  a {
+    text-decoration: none;
+  }
+
+  //Hamburger open style
+  &.open {
+    .header__toggle {
+      > span:first-child {
+        transform: rotate(45deg);
+      }
+      > span:nth-child(2) {
+        opacity: 0;
+      }
+      > span:last-child {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  nav {
+    padding: 15px 20px;
+    margin-right: 20px;
+  }
+
+  &__logo {
+    h1 {
+      color: white;
+      font-size: 35px;
+      font-weight: 400;
+      margin-left: 175px;
+      @include breakpoint-down(medium) {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  &__toggle {
+    > span {
+      display: block;
+      width: 26px;
+      height: 2px;
+      background-color: #707070;
+      transform-origin: 3px 1px;
+      transition: all 300ms ease-in-out;
+
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  &__menu {
+    position: absolute;
+    width: calc(100% - 3rem);
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    margin-top: 1.5rem;
+    padding: 1.625rem;
+    border-radius: 5px;
+    a {
+      display: block;
+      color: #fff;
+      padding: 0.62rem;
+      text-align: center;
+    }
+  }
+
+  &__links {
+    .link {
+      font-family: "Apercu Pro";
+      font-size: 18px;
+      position: relative;
+      font-weight: 500;
+      text-decoration: none;
+      color: #fff;
+
+      &:not(:last-child) {
+        margin: 32px 20px;
+      }
+
+      &.active:after {
+        background: #efc862;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        display: block;
+        top: 100%;
+        left: 0;
+        margin-top: 7px;
+        transition: opacity 0.1s linear;
+      }
+
+      &:hover {
+        &::after {
+          background: #efc862;
+        }
+      }
+    }
+  }
+}
+
+//Flexbox
+.flex {
+  display: flex;
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+  &-jc-c {
+    justify-content: center;
+  }
+  &-ai-c {
+    align-items: center;
+  }
+  &-fd-cl {
+    flex-direction: column;
+  }
+}
+
+//Visibility
+
+.hide-for-mobile {
+  @include breakpoint-down(medium) {
+    display: none;
+  }
+}
+
+.hide-for-desktop {
+  @include breakpoint-up(large) {
+    display: none;
+  }
+}

@@ -289,7 +289,7 @@
 
 body {
   background-color: #161616;
-  font-family: "Apercu Pro";
+  font-family: "Arimo", sans-serif;
 }
 
 .header {
@@ -369,7 +369,7 @@ body {
 }
 
 .header__links .link {
-  font-family: "Apercu Pro";
+  font-family: "Arimo", sans-serif;
   font-size: 18px;
   position: relative;
   font-weight: 500;

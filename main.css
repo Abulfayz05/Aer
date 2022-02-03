@@ -44,12 +44,40 @@
 @media (max-width: 576px) {
   .hero .slider {
     margin: 0px;
+    margin: 1px;
     padding: 10px;
-    -ms-grid-columns: 300px 300px 250px 250px;
-        grid-template-columns: 300px 300px 250px 250px;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    grid-gap: 2px;
   }
-  .hero .slider .first {
+  .hero .slider .box1 {
     display: none;
+  }
+  .hero .slider .box2 {
+    position: relative;
+    width: 280px;
+  }
+  .hero .slider .box3 {
+    display: none;
+  }
+  .hero .slider .box4 {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 4;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 3;
+    position: relative;
+  }
+  .hero .slider .box4 img {
+    height: 80px;
+    position: relative;
+    margin-top: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
